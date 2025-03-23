@@ -55,12 +55,17 @@ h1
     font-size: 4vw 
     font-weight: 700
     margin-bottom: 4vw
-    margin-top: 7vw
+    margin-top: 0vw
 textarea
     display: block
     width: 100%
-    height: 15vw
-    border-radius: 10px
+    height: 22vw
+    border-radius: 2vw
+    padding: 3vw
+    box-sizing: border-box
+    font-size: 4vw
+    ont-family: "Manrope", sans-serif
+    
 
 //start footer buttons 
 .footer-buttons
@@ -120,7 +125,9 @@ textarea
     top: 50%
     left: 50%
     transform: translateY(-50%) translateX(-50%)
-//end footer buttons
+.button.disable
+    pointer-events: none
+    background: lightgrey
 
 @import "media"
 

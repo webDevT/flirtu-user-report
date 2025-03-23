@@ -17,21 +17,8 @@
 <body>
 
 
-	<div class="get-vip payment-completed">
-		<!-- ---------start header------------->
-		<div class="header">
-			<div class="container">
-				<div class="logo">
-					<a href="https://flirtu.io/">
-						<img src="img/logo-a.svg" alt="flirtu logo" loading="lazy">
-						<h1>Dating on Telegram</h1>
+	<div class="">
 		
-					</a>
-				</div>
-			</div>
-		
-		</div>
-		<!-- -----------end header---------- -->
 		
 		 <!-- ---------------start content------------ -->
 		 <div class="content premium-wrapper">
@@ -48,12 +35,7 @@
 					John Dou
 				</div>
 
-				<p class="">
-					Если пользователь нарушает правила или ведёт себя подозрительно, сообщите нам. Ваша жалоба поможет сделать сервис безопаснее.
-				</p>
-
-				<p>
-					🔒 Мы не раскрываем вашу личность.
+				<p class=""> Ваша жалоба поможет сделать сервис безопаснее.
 				</p>
 
 				<h2 class="h2">
@@ -124,7 +106,7 @@
 				<div class="footer-buttons">	
 					<div class="container">
 					<a href="" class="cancle-link">Отмена</a>
-					<a href="" class="button">Отправить жалобу</a>
+					<a href="" class="button disable">Отправить жалобу</a>
 			
 		
 				
@@ -140,6 +122,26 @@
 			</div>
 
 
-	<script src="js/main.js"></script>
+
+<script>
+
+
+  const radioButtons = document.querySelectorAll('input[name="reson"]');
+  const submitButton = document.querySelector('.footer-buttons .button');
+
+  function enableSubmitButton() {
+    submitButton.classList.remove('disable');
+  }
+
+  radioButtons.forEach(radio => {
+    radio.addEventListener('change', function() {
+      if (this.checked) {
+        enableSubmitButton();
+      }
+    });
+  });
+
+
+</script>
 </body>
 </html>
